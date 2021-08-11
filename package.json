@@ -14,8 +14,11 @@
 	},
 	"scripts": {
 		"start": "npm-run-all --parallel start:*",
+		"install": "npm-run-all --parallel install:*",
 		"start:master": "cd master && umi dev",
-		"start:app1": "cd app1 && umi dev"
+		"start:app1": "cd app1 && umi dev",
+		"install:master": "cd master && yarn",
+		"install:app1": "cd app1 && yarn"
 	},
 	"dependencies": {
 		"umi": "^3.5.13"
